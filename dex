@@ -37,6 +37,7 @@ import sys
 
 __version__ = "0.7"
 
+#TODO: Check if Root. If True then exit. It is not save Execution with Root rights.
 
 # DesktopEntry exceptions
 class DesktopEntryTypeException(Exception):
@@ -503,6 +504,7 @@ class Application(DesktopEntry):
 		return cmd
 
 	def execute(self, dryrun=False, verbose=False):
+		#TODO: EXECUTE PERFIX AND SUFfIX BEFOR OR AFTER EXECUTE CMD
 		"""
 		Execute application
 		@return	Return subprocess.Popen object
